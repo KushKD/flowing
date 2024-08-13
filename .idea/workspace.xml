@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f14ac08-8975-409b-b4fd-53a1e00bfe5e" name="Changes" comment="-- Placements Completed">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/modules/order/OrdersRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/modules/order/OrdersRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2QQEl5mzll83hGB27xJTLNmFW7M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EducationMisApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FlowChakraApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FlowChakra [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FlowChakra [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/IdeaProjects/FlowChakra/src/main/resources/static/css/fonts&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\IdeaProjects\FlowChakra\src\main\resources\static\css\fonts" />
+      <recent name="C:\Users\DELL\IdeaProjects\FlowChakra\src\main\resources\static\js\flosc" />
+      <recent name="C:\Users\DELL\IdeaProjects\FlowChakra\src\main\resources\static\js\flowchakra_main" />
+      <recent name="C:\Users\DELL\IdeaProjects\FlowChakra\src\main\resources\static\images\flowchakra_main" />
+      <recent name="C:\Users\DELL\IdeaProjects\FlowChakra\src\main\resources\static\css\flowchakra_main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images/school" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dashboard" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/roles" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mis.education.Education.MIS.modules.activities.entity" />
+      <recent name="com.mis.education.Education.MIS.modules.courses.entity" />
+      <recent name="com.mis.education.Education.MIS.modules.results" />
+      <recent name="com.mis.education.Education.MIS.modules.reports.attendance" />
+      <recent name="com.mis.education.Education.MIS.modules.attendance.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="FlowChakraApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mis.education.Education.MIS.FlowChakraApplication" />
+      <module name="Education-MIS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mis.education.Education.MIS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="nim.task.build.to.cache" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FlowChakraApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f14ac08-8975-409b-b4fd-53a1e00bfe5e" name="Changes" comment="" />
+      <created>1685277554207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685277554207</updated>
+    </task>
+    <task id="LOCAL-00001" summary="-- Roles Module Working">
+      <created>1685378109805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685378109805</updated>
+    </task>
+    <task id="LOCAL-00002" summary="-- Roles Module Completed">
+      <created>1685381883543</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685381883543</updated>
+    </task>
+    <task id="LOCAL-00003" summary="-- Roles Module Completed">
+      <created>1685640034194</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685640034194</updated>
+    </task>
+    <task id="LOCAL-00004" summary="-- States Module Completed">
+      <created>1685643773577</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685643773577</updated>
+    </task>
+    <task id="LOCAL-00005" summary="-- Districts Completed">
+      <created>1685853945428</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685853945428</updated>
+    </task>
+    <task id="LOCAL-00006" summary="-- Districts Completed">
+      <created>1685854069594</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685854069594</updated>
+    </task>
+    <task id="LOCAL-00007" summary="-- Block Module Completed">
+      <created>1685867216397</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685867216397</updated>
+    </task>
+    <task id="LOCAL-00008" summary="-- Educational Block Completed">
+      <created>1685869847208</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685869847208</updated>
+    </task>
+    <task id="LOCAL-00009" summary="-- Assembly Constituecy Module Completed">
+      <created>1685875308254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685875308254</updated>
+    </task>
+    <task id="LOCAL-00010" summary="-- Area Module Completed">
+      <created>1685900369680</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685900369680</updated>
+    </task>
+    <task id="LOCAL-00011" summary="-- Class Module Created">
+      <created>1686675594122</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686675594122</updated>
+    </task>
+    <task id="LOCAL-00012" summary="-- Facility Module Created">
+      <created>1686677796262</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686677796262</updated>
+    </task>
+    <task id="LOCAL-00013" summary="-- Season Module Created">
+      <created>1686679682539</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686679682539</updated>
+    </task>
+    <task id="LOCAL-00014" summary="-- Department Master Completed">
+      <created>1686762292023</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686762292023</updated>
+    </task>
+    <task id="LOCAL-00015" summary="-- School Type Module Completed">
+      <created>1686846761868</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686846761868</updated>
+    </task>
+    <task id="LOCAL-00016" summary="-- Modules Completed">
+      <created>1686847093296</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686847093296</updated>
+    </task>
+    <task id="LOCAL-00017" summary="-- Schools Page Design in Progress">
+      <created>1686856021970</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686856021970</updated>
+    </task>
+    <task id="LOCAL-00018" summary="-- School Ajax and Multi Select Completed">
+      <created>1687092756452</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687092756452</updated>
+    </task>
+    <task id="LOCAL-00019" summary="-- School Save Completed&#10;-- School View Completed">
+      <created>1687113296706</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1687113296706</updated>
+    </task>
+    <task id="LOCAL-00020" summary="-- School Completed">
+      <created>1687202389559</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687202389559</updated>
+    </task>
+    <task id="LOCAL-00021" summary="-- User Registration">
+      <created>1687206517102</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1687206517102</updated>
+    </task>
+    <task id="LOCAL-00022" summary="-- User Updated">
+      <created>1687319245125</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1687319245125</updated>
+    </task>
+    <task id="LOCAL-00023" summary="-- Student Creation">
+      <created>1687337305684</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1687337305684</updated>
+    </task>
+    <task id="LOCAL-00024" summary="-- Student Module Complete">
+      <created>1687550163528</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1687550163528</updated>
+    </task>
+    <task id="LOCAL-00025" summary="-- Roles Created &#10;-- Login Screen Updated">
+      <created>1687551908498</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687551908498</updated>
+    </task>
+    <task id="LOCAL-00026" summary="-- Dashboard in Progress">
+      <created>1687554402896</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1687554402896</updated>
+    </task>
+    <task id="LOCAL-00027" summary="-- Home Page Designed">
+      <created>1687664039367</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1687664039367</updated>
+    </task>
+    <task id="LOCAL-00028" summary="-- Get Studend Different Level Wise Completed">
+      <created>1687667455523</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1687667455523</updated>
+    </task>
+    <task id="LOCAL-00029" summary="-- Charts Added">
+      <created>1687676334853</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1687676334853</updated>
+    </task>
+    <task id="LOCAL-00030" summary="-- School Role Completed">
+      <created>1687689180664</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1687689180664</updated>
+    </task>
+    <task id="LOCAL-00031" summary="-- Student Validations Completed">
+      <created>1687691068101</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1687691068101</updated>
+    </task>
+    <task id="LOCAL-00032" summary="-- Student Validations Completed">
+      <created>1688280921350</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1688280921350</updated>
+    </task>
+    <task id="LOCAL-00033" summary="-- User Registration Form Updated">
+      <created>1688654441228</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1688654441228</updated>
+    </task>
+    <task id="LOCAL-00034" summary="-- User Registration Form Updated">
+      <created>1688671111212</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1688671111212</updated>
+    </task>
+    <task id="LOCAL-00035" summary="-- User Registration Changes Made">
+      <created>1688818919473</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1688818919473</updated>
+    </task>
+    <task id="LOCAL-00036" summary="-- User Update In Progress">
+      <created>1688828937815</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1688828937815</updated>
+    </task>
+    <task id="LOCAL-00037" summary="-- User Update Completed">
+      <created>1688878277465</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1688878277465</updated>
+    </task>
+    <task id="LOCAL-00038" summary="-- Teacher Profile Updated">
+      <created>1688880141772</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1688880141772</updated>
+    </task>
+    <task id="LOCAL-00039" summary="-- Attendance in Progress">
+      <created>1688886210066</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1688886210066</updated>
+    </task>
+    <task id="LOCAL-00040" summary="-- Attendance Completed">
+      <created>1688899464397</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1688899464397</updated>
+    </task>
+    <task id="LOCAL-00041" summary="-- Updations Completed">
+      <created>1688904158937</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1688904158937</updated>
+    </task>
+    <task id="LOCAL-00042" summary="-- Updations Completed">
+      <created>1689010483481</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1689010483481</updated>
+    </task>
+    <task id="LOCAL-00043" summary="-- Students Fields Addtition">
+      <created>1689018298377</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1689018298377</updated>
+    </task>
+    <task id="LOCAL-00044" summary="-- Students Fields Addtition">
+      <created>1689019713527</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1689019713527</updated>
+    </task>
+    <task id="LOCAL-00045" summary="-- Bug Fixing">
+      <created>1689195900474</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1689195900474</updated>
+    </task>
+    <task id="LOCAL-00046" summary="-- School Reports Added Filters">
+      <created>1689614679626</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1689614679626</updated>
+    </task>
+    <task id="LOCAL-00047" summary="-- Student Filter in Progress: Some Modifications Required">
+      <created>1689618808101</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1689618808101</updated>
+    </task>
+    <task id="LOCAL-00048" summary="-- Downloading of School Excel File Completed">
+      <created>1689741128358</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1689741128358</updated>
+    </task>
+    <task id="LOCAL-00049" summary="-- Downloading of School Excel File Completed">
+      <created>1689741172902</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1689741172902</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="-- Downloading of School Excel File Completed" />
+    <MESSAGE value="-- ID Card Teacher Updated" />
+    <MESSAGE value="-- Cache Functionality Added : Under Testing" />
+    <MESSAGE value="-- Teacher and School Bifurcation" />
+    <MESSAGE value="-- Updations in Progress" />
+    <MESSAGE value="-- School Dashboard and Teacher Dashboard In Progress" />
+    <MESSAGE value="-- User Registration Module Updated" />
+    <MESSAGE value="--VTP in Progress" />
+    <MESSAGE value="-- Attendance Zip In Progress&#10;-- Rest Completed" />
+    <MESSAGE value="-- VPT Complete (Under Testing)" />
+    <MESSAGE value="-- Code Uploaded to Server" />
+    <MESSAGE value="-- Changes in School and Student" />
+    <MESSAGE value="-- Changes VTP" />
+    <MESSAGE value="-- Schools Updated" />
+    <MESSAGE value="-- Code Updated" />
+    <MESSAGE value="-- Student Result in Progress&#10;-- UI Completed&#10;-- DB Save in Progress" />
+    <MESSAGE value="-- Minor Modifications" />
+    <MESSAGE value="-- Result Finalization" />
+    <MESSAGE value="-- Curriculum Completed Master" />
+    <MESSAGE value="-- Curriculum Complete" />
+    <MESSAGE value="-- Job Role Added" />
+    <MESSAGE value="-- Home Page Redesigned" />
+    <MESSAGE value="-- Activities in Progress" />
+    <MESSAGE value="-- Activities Completed" />
+    <MESSAGE value="-- Placements Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- Placements Completed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/repositories/blocks/BlockRepositoryCustomImpl.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/modules/class_/controller/ClassController.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/modules/reports/student/StudentReportRestController.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/modules/user/controller/UserController.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/ajax/AjaxContoller.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/modules/courses/Controller/CourseController.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/modules/courses/Controller/CourseController.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/modules/activities/controller/ActivityController.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mis/education/Education/MIS/ajax/AjaxContoller.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Education_MIS$EducationMisApplication.ic" NAME="EducationMisApplication Coverage Results" MODIFIED="1694271358573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.mis.education.Education.MIS.*</FILTER>
+    </SUITE>
+  </component>
+</project>

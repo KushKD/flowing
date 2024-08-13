@@ -1,0 +1,249 @@
+##########################################################################################################
+############################## Flowchakra Application Database Queries #######################################
+##########################################################################################################
+
+ -- Users
+CREATE TABLE users(
+user_id SERIAL PRIMARY KEY NOT NULL,
+firstname character varying (50) NOT NULL,
+lastname character varying (255) NOT NULL,
+password character varying (255),
+mobile_number BIGINT,
+email character varying(100),
+active boolean DEFAULT true NOT NULL,
+isDeleted boolean DEFAULT false NOT NULL,
+createddate timestamp without time zone DEFAULT ('now'::text)::date,
+updatedDate timestamp without time zone,
+username character varying (255);
+);
+
+
+
+-- Roles
+create table roles(
+role_id SERIAL PRIMARY KEY NOT NULL,
+role_name character varying (15),
+role_description character varying (55),
+active boolean DEFAULT true NOT NULL,
+isDeleted boolean DEFAULT false NOT NULL,
+createddate timestamp without time zone DEFAULT ('now'::text)::date NOT NULL,
+lastmodifieddate timestamp without time zone
+)
+
+-- Role Mapping
+CREATE TABLE user_role_mapping(
+id SERIAL PRIMARY KEY NOT NULL,
+user_id Integer,
+role_id Integer,
+active boolean DEFAULT true NOT NULL,
+createddate timestamp without time zone DEFAULT ('now'::text)::date NOT NULL,
+lastmodifieddate timestamp without time zone,
+FOREIGN KEY (user_id) REFERENCES users(user_id),
+FOREIGN KEY (role_id) REFERENCES roles(role_id)
+)
+
+
+
+CREATE TABLE mst_products(
+product_id SERIAL PRIMARY KEY NOT NULL,
+product_name  character varying (255),
+product_image  TEXT,
+short_description character varying (255),
+long_description TEXT,
+product_tax character varying (2),
+product_price character varying (2),
+active boolean DEFAULT true NOT NULL,
+is_deleted boolean DEFAULT false NOT NULL,
+createddate timestamp without time zone DEFAULT ('now'::text)::date,
+updated_date timestamp without time zone
+);
+
+ CREATE TABLE mst_products_thumbnails (
+     thumbnail_id serial PRIMARY KEY  NOT NULL,
+     product_id INTEGER NOT NULL,
+     document_name character varying(255) NOT NULL,
+     uploaded_by INTEGER NOT NULL,
+     active boolean DEFAULT true NOT NULL,
+     createddate timestamp without time zone DEFAULT ('now'::text)::date NOT NULL,
+     lastmodifieddate timestamp without time zone,
+     FOREIGN KEY (product_id) REFERENCES mst_products(product_id)
+ );
+
+ -- Create the wishlist table
+ CREATE TABLE wishlist (
+     wishlist_id SERIAL PRIMARY KEY,
+     user_id INT,
+     product_id INT,
+     quantity INT DEFAULT 1,
+ 	createddate timestamp without time zone DEFAULT ('now'::text)::date,
+     active boolean DEFAULT true NOT NULL,
+ 	FOREIGN KEY (user_id) REFERENCES users(user_id),
+     FOREIGN KEY (product_id) REFERENCES mst_products(product_id)
+ );
+
+
+  -- Create the Address
+  CREATE TABLE mst_address (
+      address_id SERIAL PRIMARY KEY,
+      user_id INT,
+      country_id INT,
+      state_id INT,
+      city  character varying(255) NOT NULL,
+      pincode  character varying(255) NOT NULL,
+      address  character varying(255) NOT NULL,
+      default_address  boolean DEFAULT true NOT NULL,
+  	  createddate timestamp without time zone DEFAULT ('now'::text)::date,
+      active boolean DEFAULT true NOT NULL,
+  	  FOREIGN KEY (state_id) REFERENCES mst_state(state_id),
+  	   FOREIGN KEY (user_id) REFERENCES users(user_id)
+  );
+
+
+--Carts
+  CREATE TABLE mst_cart (
+      cart_id SERIAL PRIMARY KEY,
+      user_id INTEGER,
+	  quantity_id INTEGER,
+	  status  character varying(255) NOT NULL,
+  	  createddate timestamp without time zone DEFAULT ('now'::text)::date,
+      active boolean DEFAULT true NOT NULL,
+  	  FOREIGN KEY (user_id) REFERENCES users(user_id)
+  );
+
+
+-- cart items
+--Carts
+  CREATE TABLE mst_cartitem (
+      cartitem_id SERIAL PRIMARY KEY,
+      user_id INTEGER,
+      cart_id INTEGER,
+	  product_id INTEGER,
+	  product_quantity INTEGER,
+  	  createddate timestamp without time zone DEFAULT ('now'::text)::date,
+      active boolean DEFAULT true NOT NULL,
+      FOREIGN KEY (cart_id) REFERENCES mst_cart(cart_id),
+  	  FOREIGN KEY (product_id) REFERENCES mst_products(product_id),
+  	  FOREIGN KEY (user_id) REFERENCES users(user_id)
+  );
+
+
+  --Orders
+
+  CREATE TABLE mst_orders (
+         id SERIAL PRIMARY KEY,
+         amount double precision,
+         currency character varying(50) NOT NULL,
+   	    receipt character varying(100) NOT NULL,
+   	    order_id character varying(255) NOT NULL,
+   	    alternate_phone character varying(20) NOT NULL,
+   	    phone character varying(20) NOT NULL,
+   	    additional_info character varying(255) NOT NULL,
+   	    payment_methord character varying(100) NOT NULL,
+   	    shippingaddress_id INTEGER,
+   	    billingaddress_id INTEGER,
+   	    user_id INTEGER,
+   	    cart_id INTEGER,
+   	    gateway_entity character varying(100) NOT NULL,
+   	    status character varying(50) NOT NULL,
+   	    attempts INTEGER,
+         createddate timestamp without time zone DEFAULT ('now'::text)::date,
+         active boolean DEFAULT true NOT NULL,
+         FOREIGN KEY (cart_id) REFERENCES mst_cart(cart_id),
+     	FOREIGN KEY (user_id) REFERENCES users(user_id)
+     );
+
+       CREATE TABLE mst_queries (
+              query_id SERIAL PRIMARY KEY,
+              name character varying(255) NOT NULL,
+              email character varying(255) NOT NULL,
+              phone character varying(50) NOT NULL,
+        	  support_for character varying(255) NOT NULL,
+        	  message text,
+              createddate timestamp without time zone DEFAULT ('now'::text)::date,
+              active boolean DEFAULT true NOT NULL
+          );
+
+
+INSERT INTO mst_state (state_id, state_name, is_active, is_deleted, created_on, country_id) VALUES
+(1,	'Andhra Pradesh',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(2,	'Arunachal Pradesh',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(3,	'Assam',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(4,	'Bihar',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(5,	'Chhattisgarh',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(6,	'Goa',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(7,	'Gujarat',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(8,	'Haryana',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(9,	'Himachal Pradesh',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(10,	'Jammu Kashmir',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(11,	'Jharkhand',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(12,	'Karnataka',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(13,	'Kerala',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(14,	'Madhya Pradesh',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(15,	'Maharashtra',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(16,	'Manipur',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(17,	'Meghalaya',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(18,	'Mizoram',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(19,	'Nagaland',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(20,	'Odisha',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(21,	'Punjab',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(22,	'Rajasthan',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(23,	'Sikkim',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(24,	'Tamil Nadu',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(25,	'Telangana',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(26,	'Tripura',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(27,	'Uttar Pradesh',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(28,	'Uttarakhand',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(29,	'West Bengal',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(30,	'Andaman Nicobar',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(31,	'Chandigarh',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(32,	'Dadra Nagar Haveli',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(33,	'Daman Diu',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(34,	'Delhi',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(35,	'Lakshadweep',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(36,	'Ladakh',	'Y',	'N',	'2020-04-28 18:51:34', 1),
+(37,	'Puducherry',	'Y',	'N',	'2020-04-28 18:51:34', 1);
+
+
+
+
+Weelly Updates
+
+ <div class="col-xxl-8 order-1 order-xxl-2">
+            <div class="timing-box d-flex align-items-center justify-content-center justify-content-sm-between rounded-3 flex-wrap gap-3">
+               <h4 class="mb-0">Weekly Best Deals</h4>
+               <ul class="timing-countdown countdown-timer d-flex align-items-center gap-2" data-date="03/31/2023 00:00:00">
+                  <li class="position-relative z-1 d-flex align-items-center justify-content-center flex-column rounded-2">
+                     <h5 class="mb-0 days">00</h5>
+                     <span class="gshop-subtitle fs-xxs d-block">Days</span>
+                  </li>
+                  <li class="position-relative z-1 d-flex align-items-center justify-content-center flex-column rounded-2">
+                     <h5 class="mb-0 hours">00</h5>
+                     <span class="gshop-subtitle fs-xxs d-block">Hours</span>
+                  </li>
+                  <li class="position-relative z-1 d-flex align-items-center justify-content-center flex-column rounded-2">
+                     <h5 class="mb-0 minutes">00</h5>
+                     <span class="gshop-subtitle fs-xxs d-block">Min</span>
+                  </li>
+                  <li class="position-relative z-1 d-flex align-items-center justify-content-center flex-column rounded-2">
+                     <h5 class="mb-0 seconds">00</h5>
+                     <span class="gshop-subtitle fs-xxs d-block">Sec</span>
+                  </li>
+               </ul>
+            </div>
+
+         </div>
+
+         <!--banner section start-->
+         <section class="pb-120 position-relative z-1 pt-120">
+            <div class="container">
+               <div class="row g-4 align-items-center justify-content-center">
+                  <div class="col-xxl-4 col-xl-5 order-2 order-xxl-1 d-none d-xl-block d-none-1399">
+                     <a href="">
+                     <img src="" alt="" class="img-fluid">
+                     </a>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+         <!--banner section end-->

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+
+    <definition name="baselayoutdashboard" template="/WEB-INF/views/layout_dashboard.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/header_dashboard.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer_dashboard.jsp" />
+    </definition>
+
+
+
+    <definition name="main" template="/WEB-INF/views/main_page.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/header_mainpage.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer_mainpage.jsp" />
+    </definition>
+
+    <definition name="error" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/errorpage.jsp" />
+    </definition>
+
+
+    <definition name="vendorRegistration" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/vendorRegistration.jsp" />
+    </definition>
+
+
+
+    <definition name="flightapplication" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/flight_applivendorRegistrationcation_form.jsp" />
+    </definition>
+
+    <definition name="checkStatus" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/checkStatus.jsp" />
+    </definition>
+
+
+
+    <definition name="nopaymentpage" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/nopaymentProceed.jsp" />
+    </definition>
+
+
+
+    <definition name="about" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/website_main/about.jsp" />
+    </definition>
+
+    <definition name="contactus" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/contactus.jsp" />
+    </definition>
+
+    <definition name="refundpage" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/refund.jsp" />
+    </definition>
+
+    <definition name="privacypolicy" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/privacypolicy.jsp" />
+    </definition>
+
+    <definition name="termsandconditions" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/termsandconditions.jsp" />
+    </definition>
+
+    <definition name="curriculumschool" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/home/curriculumschool.jsp" />
+    </definition>
+
+
+
+
+
+
+
+    <definition name="postPayment" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/postpayment.jsp" />
+    </definition>
+
+
+
+    <definition name="mainpage" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/website_main/mainpage.jsp" />
+    </definition>
+
+    <definition name="homepage_new" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/views/home_dashboard.jsp" />
+    </definition>
+
+
+
+
+
+    <!-- Users -->
+    <definition name="createuser" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/userRegistration/registration.jsp" />
+    </definition>
+
+    <definition name="viewUsers" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/userRegistration/viewusers.jsp" />
+    </definition>
+
+    <definition name="viewuserspecific" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/userRegistration/viewuserspecific.jsp" />
+    </definition>
+
+    <definition name="viewuserschool" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/userRegistration/viewuserschool.jsp" />
+    </definition>
+
+    <definition name="updateUser" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/userRegistration/updateuser.jsp" />
+    </definition>
+
+    <definition name="updateUserSpecific" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/userRegistration/updateuserspecific.jsp" />
+    </definition>
+
+
+
+    <!-- Users End -->
+
+
+    <!-- Roles -->
+
+    <definition name="createrole" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/roles/rolesmaster.jsp" />
+    </definition>
+
+
+    <definition name="getRoles" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/roles/viewrole.jsp" />
+    </definition>
+
+    <definition name="updatrole" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/roles/updaterole.jsp" />
+    </definition>
+
+    <!-- Roles End-->
+
+
+    <!-- Products -->
+    <definition name="createProduct" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/products/create_product.jsp" />
+    </definition>
+
+    <definition name="viewProducts" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/products/view_products.jsp" />
+    </definition>
+
+    <definition name="updateProduct" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/products/update_product.jsp" />
+    </definition>
+
+
+    <definition name="viewOrders" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/orders/view-orders-all.jsp" />
+    </definition>
+
+
+    <definition name="contact-us" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/contactus/contact-us.jsp" />
+    </definition>
+
+
+    <!-- Products -->
+
+
+
+
+
+    <definition name="userdetails" extends="baselayoutdashboard">
+        <put-attribute name="content" value="/WEB-INF/jsp/userDetails.jsp" />
+    </definition>
+
+
+    <definition name="login" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+
+
+    <definition name="register" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/website_main/registration.jsp" />
+    </definition>
+
+
+    <definition name="contactus" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/website_main/contactus.jsp" />
+    </definition>
+
+
+    <definition name="products" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/website_main/products.jsp" />
+    </definition>
+
+    <definition name="customer-dashboard" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/customer/customer_dashboard.jsp" />
+    </definition>
+
+    <definition name="customer-address" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/customer/customer_address.jsp" />
+    </definition>
+
+
+    <definition name="customer-wishlist" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/wishlist/customer-wishlist.jsp" />
+    </definition>
+
+    <definition name="viewCart" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/checkout/customer-viewcart.jsp" />
+    </definition>
+
+
+
+
+    <definition name="checkout" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/checkout/checkout.jsp" />
+    </definition>
+
+
+
+    <definition name="checkout-complete" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/checkout/checkout-complete.jsp" />
+    </definition>
+
+
+    <definition name="customer-order-history" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/orders/customer-order-history.jsp" />
+    </definition>
+
+    <definition name="update-profile" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/profile/update-profile.jsp" />
+    </definition>
+
+    <definition name="customer-invoice" extends="main">
+        <put-attribute name="content" value="/WEB-INF/jsp/customer/customer_invoice.jsp" />
+    </definition>
+
+
+
+
+
+
+
+
+
+</tiles-definitions>
